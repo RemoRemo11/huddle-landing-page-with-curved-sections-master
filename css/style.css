@@ -33,6 +33,7 @@ header .header-container {
     color: hsl(321, 100%, 78%);
     border-color: hsl(321, 100%, 78%);
 }
+
 @media (min-width: 680px) {
     p, a {
         font-size: 16px !important;
@@ -62,7 +63,6 @@ section h1 {
     font-weight: bold;
     color: hsl(192, 100%, 9%);
 }
-
 .section-container .container-cont h3 {
 	color: hsl(192, 100%, 9%);
 	font-size: 20px;
@@ -77,6 +77,7 @@ main section:not(:first-child) .section-container .img img {
 section .section-container> p, .section-container .container-cont p {
 	font-size: 14px;
 }
+
 @media (min-width: 680px) {
     section h1 {
         font-size: 3rem;
@@ -131,7 +132,6 @@ section .section-container> p, .section-container .container-cont p {
 }
 .first a:hover, .start:hover {
     background-color: hsl(321, 100%, 78%);
-
 }
 .first .section-container > img {
     max-width: 100%;
@@ -143,7 +143,6 @@ section .section-container> p, .section-container .container-cont p {
 .first .numbers div:first-child {
     margin-bottom: 80px;
 }
-
 .first .numbers .numbers-box h2 {
 	font-size: 4rem;
 	color: hsl(192, 100%, 9%);
@@ -159,7 +158,6 @@ section .section-container> p, .section-container .container-cont p {
     top: -45px;
     left: -10px;
 }
-
 .first .numbers .numbers-box p {
     color: gray;
     font-size: 12px;
@@ -177,6 +175,7 @@ section .section-container> p, .section-container .container-cont p {
     padding-bottom: 40px;
     padding-top: 80px;
 }
+
 .top {
     position: relative;
     top: 10px;
@@ -188,6 +187,7 @@ section .section-container> p, .section-container .container-cont p {
     width: 100%;
     max-height: 100%;
 }
+
 .third .section-container {
     padding-top: 60px;
     margin-bottom: 80px;
@@ -253,12 +253,10 @@ footer {
     background-color: hsl(192, 100%, 9%);
     position: relative;
 }
-
 footer .footer-container {
     color: white;
     padding: 40px 30px;
 }
-
 .footer-container .sub h4 {
     text-transform: uppercase;
     margin-bottom: 20px;
@@ -290,15 +288,14 @@ footer .footer-container {
 }
 .footer-container .sub form input[type="submit"]:hover {
     background-color: hsl(321, 100%, 78%);
+    cursor: pointer;
 }
-
 footer .footer-cont {
     margin-top: 100px;
 }
 footer .footer-cont svg {
     margin-bottom: 10px;
 }
-
 footer .contact {
     margin-top: 30px;
 }
@@ -312,16 +309,21 @@ footer .contact a {
 footer .contact a i {
     margin-right: 20px;
 }
-
 footer .socials {
     margin-top: 60px;
     display: flex;
     gap: 20px;
 }
-
 footer .socials i {
     transform: scale(150%);
+    color: white;
+    transition: .25s;
 }
+footer .socials i:hover {
+    color: hsl(207, 100%, 60%);
+
+}
+
 @media (min-width: 680px) {
     .footer-container {
         max-width: 600px;
